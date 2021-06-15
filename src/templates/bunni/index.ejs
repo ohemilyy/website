@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Bunni // Emily</title>
+    <link rel="stylesheet" type="text/css" href="/assets/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" type="image/png" sizes="1500x1500" href="/assets/images/kylar2.png">
+
+    <meta name="twitter:description" content="Java & JavaScript Developer Penetration Tester Cyber Security Expert & System Administrator Snowflakes fuck off this page">
+    <meta name="description" content="Java & JavaScript Developer Penetration Tester Cyber Security Expert & System Administrator Snowflakes fuck off this page">
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.bunni.me/assets/images/kylar2.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ItzEmilyYT">
+    <meta property="twitter:image" content="https://www.bunni.me/assets/images/kylar2.png">
+</head>
+<div id="particles-js"></div>
+
+<script src="particles.js"></script>
+
+<body draggable="false">
+    <Content>
+        <Photo>
+            <img class="avatar" id="avatar" src="https://www.bunni.me/assets/images/kylar2.png">
+        </Photo>
+        <Header>
+            <h1 class="name centre text">Emily aka Bunni <a href="https://www.last.fm/user/ItzBunniYT" target="_blank"><i class="fab fa-spotify fa-sm spotify" id="spotify" title="Not listening to anything"></i></a></h1>
+            <h2 class="text occupation">FrontEnd & Backend Developer // System Administrator // Network Security Specialist </h2>
+        </Header>
+        <Icons>
+            <p>
+                <a href="/email" target="_blank"><i class="fas fa-mail-bulk fa-2x icon" title="Email"></i></a>
+                <a href="/assets/resume.pdf" target="_blank"><i class="fas fa-user-graduate fa-2x icon-next" title="Resume"></i></a>
+                <a href="https://github.com/ItzBunniYT" target="_blank"><i class="fab fa-github fa-2x icon-next" title="GitHub"></i></a>
+                <a href="https://dsc.bio/ItzBunniYT" target="_blank"><i class="fab fa-discord fa-2x icon-next" title="Discord"></i></a>
+            </p>
+        </Icons>
+
+        <Info>
+            <a href="#"><i class="fas fa-info-circle fa-2x info" onClick="showInfo()"></i></a>
+        </Info>
+    </Content>
+    <script>
+        async function setStatus() {
+            const status = await fetch("https://api.bunni.me/internal/bunni/status").then(res => res.json());
+            const avatar = await fetch("https://api.bunni.me/internal/bunni/avatar").then(res => res.json());
+            const avatarElem = document.getElementById("avatar");
+            avatarElem.src = avatar.response;
+            avatarElem.style.borderColor = status.response.general.colour;
+            avatarElem.style.borderStyle = "solid";
+        };
+
+        function showInfo() {
+            alert("2021, Dannington. Written in pure Node.js-extended HTML (EJS) and CSS.")
+        };
+
+        async function setSpotify() {
+            const spotify = await fetch("https://api.bunni.me/internal/bunni/spotify").then(res => res.json());
+            if (spotify.response.listening == false) {
+                document.getElementById("spotify").style.visibility = "hidden";
+            } else {
+                document.getElementById("spotify").style.visibility = "visible";
+                document.getElementById("spotify").style.color = "#1DB954";
+                document.getElementById("spotify").title = `Listening to ${spotify.response.title} by ${spotify.response.artist}`;
+            };
+        };
+
+        setStatus();
+        setSpotify();
+        setInterval(setStatus, (60 * 30));
+        setInterval(setSpotify, (60 * 30));
+    </script>
+</body>
+
+</html>

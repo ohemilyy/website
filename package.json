@@ -1,0 +1,19 @@
+{
+    "name": "website",
+    "version": "6.0.0",
+    "description": "Bunni's website.",
+    "main": "web",
+    "repository": "https://github.com/Bunni/website.git",
+    "author": "Bunni & Danny",
+    "license": "MIT",
+    "private": false,
+    "dependencies": {
+        "chalk": "^4.1.1",
+        "discord.js": "^12.5.3",
+        "ejs": "^3.1.6",
+        "esm": "^3.2.25",
+        "express": "^4.17.1",
+        "express-device": "^0.4.2",
+        "js-yaml": "^4.1.0"
+    }
+}
