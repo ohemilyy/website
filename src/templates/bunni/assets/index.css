@@ -7,7 +7,11 @@
 }
 
 body {
-    background-color: #141414;
+    background-image: url("https://i.pinimg.com/originals/5f/08/58/5f085809f2b711643e4eb4974cc03c0e.gif");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: whitesmoke;
     font-family: "Roboto Mono", monospace;
     -moz-user-select: none;
