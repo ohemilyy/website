@@ -2,6 +2,8 @@ const express = require('express')
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var app = require('express')();
+const cors = require("cors");
+app.use(cors());
 let cache = {
     spotify: {
         listening: false,
@@ -108,3 +110,5 @@ app.get("/internal/bunni/avatar", function(req, res, next) {
 app.listen(8670, function() {
     console.log("API is now listening on port :8670");
 });
+
+client.login("NzgyMTEyMzU5MDE5NTc3MzQ2.X8Hc5Q.c31nIWBX-ygVo4flF1OF7GHzvCU");
