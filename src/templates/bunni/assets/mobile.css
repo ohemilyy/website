@@ -1,77 +1,82 @@
-/* Roboto Mono: monospace */ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* Roboto Mono: monospace */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 .centre {
-  margin-top: 5%;
-  transform: translate(0%, 10%);
+    margin-top: 5%;
+    transform: translate(0%, 10%);
 }
 
 body {
-  background-color: #141414;
-  color: whitesmoke;
-  font-family: "Roboto Mono", monospace;
-  -moz-user-select: none; 
-  -webkit-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none;
-  -o-user-select: none;
+    background-image: url("https://i.pinimg.com/originals/5f/08/58/5f085809f2b711643e4eb4974cc03c0e.gif");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: whitesmoke;
+    font-family: "Roboto Mono", monospace;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
 }
 
 .avatar {
-  border-radius: 50%;
-  border-color: #FEE75C;
-  border-width: 5px;
-  width: 25vw;
-  height: 25vw;
-  transform: scale(100%, 100%);
+    border-radius: 50%;
+    border-color: #FEE75C;
+    border-width: 5px;
+    width: 25vw;
+    height: 25vw;
+    transform: scale(100%, 100%);
 }
 
 .text {
-  text-align: center;
+    text-align: center;
 }
 
 .occupation {
-  margin-top: -0.75%;
+    margin-top: -0.75%;
 }
 
 .icon {
-  color: whitesmoke;
-  margin-left: 1.5%;
+    color: whitesmoke;
+    margin-left: 1.5%;
 }
 
 .icon-next {
-  color: whitesmoke;
-  margin-left: 0.5%;
+    color: whitesmoke;
+    margin-left: 0.5%;
 }
 
 .icon:hover {
-  color: #d1d1d1;
-  margin-left: 1.5%;
+    color: #d1d1d1;
+    margin-left: 1.5%;
 }
 
 .icon-next:hover {
-  color: #d1d1d1;
-  margin-left: 0.5%;
+    color: #d1d1d1;
+    margin-left: 0.5%;
 }
 
 .info-tt {
-  position: absolute;
-  bottom: 16px;
-  right: 23px;
+    position: absolute;
+    bottom: 16px;
+    right: 23px;
 }
 
 .info:hover .info-tt {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .info {
-  color: whitesmoke;
-  position: absolute;
-  bottom: 21px;
-  right: 23px;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 21px;
+    right: 23px;
 }
 
 .spotify {
-  visibility: hidden;
-  color: whitesmoke;
+    visibility: hidden;
+    color: whitesmoke;
 }
