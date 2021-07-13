@@ -111,4 +111,4 @@ app.listen(8670, function() {
     console.log("API is now listening on port :8670");
 });
 
-client.login("NzgyMTEyMzU5MDE5NTc3MzQ2.X8Hc5Q.c31nIWBX-ygVo4flF1OF7GHzvCU");
+client.login("token here");
